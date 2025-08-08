@@ -1,0 +1,21 @@
+[project]
+name = "sea-turtle-rag-chatbot"
+version = "0.1.0"
+description = "A chatbot about sea turtles"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "kittentts",
+    "langchain>=0.3.25",
+    "langchain-chroma>=0.2.3",
+    "langchain-community>=0.3.23",
+    "langchain-ollama>=0.3.2",
+    "langchain-text-splitters>=0.3.8",
+    "requests>=2.32.3",
+    "soundfile>=0.13.1",
+    "streamlit>=1.45.1",
+]
+
+[tool.uv.sources]
+kittentts = { git = "https://github.com/KittenML/KittenTTS.git" }
