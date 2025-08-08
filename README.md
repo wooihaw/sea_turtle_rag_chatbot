@@ -71,9 +71,15 @@ The app will open in your browser. Default URL is printed by Streamlit (commonly
 On first run, the application or Ollama may download one or more models. This can take time depending on your network speed and disk space. Do not interrupt the process.
 
 ### Optional: Pre-pull a model
-If your app expects a specific model, you can pre-download it:
+If your app expects a specific model, you can pre-download it:  
+
+**Example:**
 ```bash
+# Pull the LLM
 ollama pull llama3
+
+# Pull the embedding model for RAG
+ollama pull nomic-embed-text
 ```
 Replace `llama3` with the required model name if different.
 
